@@ -9,7 +9,7 @@ from aiogram.filters import Command
 
 BOT_TOKEN = os.getenv("TOKEN")
 CHAT_ID = -1003402516683
-DATA_FILE = "users_database.json"
+DATA_FILE = "data/users_database.json"
 
 
 class UsersDB:
@@ -92,4 +92,5 @@ if __name__ == "__main__":
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
+
         pass
